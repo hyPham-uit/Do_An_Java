@@ -7,6 +7,7 @@ package Run;
 
 import java.awt.Frame;
 import view.BaseFrame;
+import view.loginFrame;
 
 /**
  *
@@ -14,6 +15,7 @@ import view.BaseFrame;
  */
 public class Run {
     public static void main(String[] args) {
-        BaseFrame frame=new BaseFrame();
+        loginFrame login=new loginFrame();
+        login.setVisible(true);
     }
 }
