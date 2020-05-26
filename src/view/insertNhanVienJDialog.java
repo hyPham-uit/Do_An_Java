@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package view;
 
 import com.placeholder.PlaceHolder;
@@ -11,14 +7,10 @@ import java.util.ArrayList;
 import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.JPanel;
-//import jdk.internal.net.http.common.Utils;
 import model.NhanVien;
 import view.BaseFrame;
 
-/**
- *
- * @author HP
- */
+
 public class insertNhanVienJDialog extends javax.swing.JDialog {
 
     PlaceHolder p1, p2, p3, p4, p5;
@@ -34,15 +26,6 @@ public class insertNhanVienJDialog extends javax.swing.JDialog {
             String ngaySinh=dateFormat.format(txtNgaySinh.getDate());
             String diaChi=txtDiaChi.getText().toUpperCase();
             long luong=Long.parseLong(this.txtLuong.getText());
-            //String gioiTinh=txtGioiTinh.getText();
-            //String gioiTinh=txtGioiTinh.getText();
-//            if(gioiTinh.equalsIgnoreCase("male")==true || gioiTinh.equalsIgnoreCase("female")==true ){
-//            }
-//            else{
-//                JOptionPane.showMessageDialog(this, "Chọn sai mục Giới tính");
-//                txtGioiTinh.setText("");
-//                return 0;
-//            }
             String soDT=txtSDT.getText();
             //String chucDanh=txtChucDanh.getText();
             String maPhong=txtMaPhong.getText();
@@ -117,31 +100,6 @@ public class insertNhanVienJDialog extends javax.swing.JDialog {
     }
 
     
-//    public insertNhanVienJDialog(JPanel panelNhanVien, boolean rootPaneCheckingEnabled) {
-//        super(panelNhanVien, rootPaneCheckingEnabled);
-//        initComponents();
-//        setLocationRelativeTo(null);
-//        home=(BaseFrame) parent;
-//        txtMaNV.setEditable(false);
-//        this.setTitle("Nhập thông tin nhân viên");
-//        ArrayList<NhanVien> list= home.nhanVienList();
-//        
-//        int id=1;
-//        boolean flag;
-//        while(true){
-//            flag=false;
-//            for(NhanVien nv:list){
-//                if(id==nv.getMaNV()){
-//                    flag=true;
-//                    break;
-//                }
-//            }
-//            if(!flag) break;
-//            ++id;
-//        }
-//        txtMaNV.setText(id+"");
-//        throw new UnsupportedOperationException("Not supported yet.");//To change body of generated methods, choose Tools | Templates.
-//    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -182,39 +140,39 @@ public class insertNhanVienJDialog extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(38, 70, 83));
+        jPanel1.setBackground(new java.awt.Color(204, 204, 204));
         jPanel1.setForeground(new java.awt.Color(244, 162, 97));
 
+        jLabel4.setBackground(new java.awt.Color(0, 0, 0));
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Họ và tên");
 
+        jLabel5.setBackground(new java.awt.Color(0, 0, 0));
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Ngày sinh");
 
+        jLabel6.setBackground(new java.awt.Color(0, 0, 0));
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Địa chỉ");
 
+        jLabel7.setBackground(new java.awt.Color(0, 0, 0));
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Giới tính");
 
+        jLabel8.setBackground(new java.awt.Color(0, 0, 0));
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Số điện thoại");
 
+        jLabel9.setBackground(new java.awt.Color(0, 0, 0));
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("Chức danh");
 
+        jLabel10.setBackground(new java.awt.Color(0, 0, 0));
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Mã phòng");
 
+        jLabel11.setBackground(new java.awt.Color(0, 0, 0));
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Lương");
 
         txtTenNV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -268,8 +226,8 @@ public class insertNhanVienJDialog extends javax.swing.JDialog {
             }
         });
 
+        jLabel3.setBackground(new java.awt.Color(0, 0, 0));
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Mã nhân viên");
 
         txtMaNV.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -290,7 +248,7 @@ public class insertNhanVienJDialog extends javax.swing.JDialog {
             }
         });
 
-        jPanel2.setBackground(new java.awt.Color(231, 111, 81));
+        jPanel2.setBackground(new java.awt.Color(69, 123, 157));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -430,11 +388,6 @@ public class insertNhanVienJDialog extends javax.swing.JDialog {
         int response=JOptionPane.showConfirmDialog(rootPane, "Bạn có chắc muốn thêm nhân viên này không ?", "Xác nhận", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
         if(response==JOptionPane.YES_OPTION){
             if(inputNhanVien()==1){
-        //            int i=home.listNV.size()-1; 
-        //            Object[] objs={home.listNV.get(i).getMaNV(), home.listNV.get(i).getTenNV(), home.listNV.get(i).getNgSinh(), 
-        //                home.listNV.get(i).getDiaChi(),home.listNV.get(i).getLuong(), home.listNV.get(i).getGioiTinh(), home.listNV.get(i).getSoDT(), 
-        //                home.listNV.get(i).getChucDanh(), home.listNV.get(i).getMaPhong()};
-        //            tblModelNhanVien.addRow(objs);
             if(home.addNhanVien()!=0)
                 this.dispose();
             }
