@@ -556,7 +556,7 @@ public class BaseFrame extends javax.swing.JFrame {
         jFemale = new javax.swing.JRadioButton();
         btThemBN = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
-        panelThuoc = new javax.swing.JPanel();
+        panelThuoc1 = new javax.swing.JPanel();
         jLabel6 = new javax.swing.JLabel();
         jLabel32 = new javax.swing.JLabel();
         txtTimMaThuoc = new javax.swing.JTextField();
@@ -1271,20 +1271,20 @@ public class BaseFrame extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout panelThuocLayout = new javax.swing.GroupLayout(panelThuoc);
-        panelThuoc.setLayout(panelThuocLayout);
-        panelThuocLayout.setHorizontalGroup(
-            panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelThuocLayout.createSequentialGroup()
-                .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelThuocLayout.createSequentialGroup()
+        javax.swing.GroupLayout panelThuoc1Layout = new javax.swing.GroupLayout(panelThuoc1);
+        panelThuoc1.setLayout(panelThuoc1Layout);
+        panelThuoc1Layout.setHorizontalGroup(
+            panelThuoc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelThuoc1Layout.createSequentialGroup()
+                .addGroup(panelThuoc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelThuoc1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jScrollPane4))
-                    .addGroup(panelThuocLayout.createSequentialGroup()
+                    .addGroup(panelThuoc1Layout.createSequentialGroup()
                         .addGap(322, 322, 322)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(panelThuocLayout.createSequentialGroup()
+                    .addGroup(panelThuoc1Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(2, 2, 2)
@@ -1299,17 +1299,17 @@ public class BaseFrame extends javax.swing.JFrame {
                         .addComponent(btThemThuoc, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
-        panelThuocLayout.setVerticalGroup(
-            panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(panelThuocLayout.createSequentialGroup()
+        panelThuoc1Layout.setVerticalGroup(
+            panelThuoc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelThuoc1Layout.createSequentialGroup()
                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(panelThuoc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelThuoc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(txtTimMaThuoc, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txtTimMatoa, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addGroup(panelThuoc1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(btThemThuoc, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(btTimMatoa, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1318,7 +1318,7 @@ public class BaseFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLayeredPane1.add(panelThuoc, "card4");
+        jLayeredPane1.add(panelThuoc1, "card4");
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -1373,7 +1373,7 @@ public class BaseFrame extends javax.swing.JFrame {
         panelNhanVien.setVisible(false);
         panelKhamBenh.setVisible(false);
         panelTiepNhan.setVisible(false);
-        panelThuoc.setVisible(true);
+        panelThuoc1.setVisible(true);
     }//GEN-LAST:event_jButtonThuocActionPerformed
 
     private void jButtonBenhNhanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBenhNhanActionPerformed
@@ -1382,7 +1382,7 @@ public class BaseFrame extends javax.swing.JFrame {
         panelNhanVien.setVisible(false);
         panelKhamBenh.setVisible(false);
         panelTiepNhan.setVisible(false);
-        panelThuoc.setVisible(false);
+        panelThuoc1.setVisible(false);
     }//GEN-LAST:event_jButtonBenhNhanActionPerformed
 
     private void btToaThuocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btToaThuocActionPerformed
@@ -1397,7 +1397,7 @@ public class BaseFrame extends javax.swing.JFrame {
         panelNhanVien.setVisible(true);
         panelKhamBenh.setVisible(false);
         panelTiepNhan.setVisible(false);
-        panelThuoc.setVisible(false);
+        panelThuoc1.setVisible(false);
     }//GEN-LAST:event_jButtonNhanvienActionPerformed
 
     private void jButtonTiepNhanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonTiepNhanActionPerformed
@@ -1406,7 +1406,7 @@ public class BaseFrame extends javax.swing.JFrame {
         panelNhanVien.setVisible(false);
         panelKhamBenh.setVisible(false);
         panelTiepNhan.setVisible(true);
-        panelThuoc.setVisible(false);
+        panelThuoc1.setVisible(false);
     }//GEN-LAST:event_jButtonTiepNhanActionPerformed
 
     private void jButtonKhamBenhActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonKhamBenhActionPerformed
@@ -1415,7 +1415,7 @@ public class BaseFrame extends javax.swing.JFrame {
         panelNhanVien.setVisible(false);
         panelKhamBenh.setVisible(true);
         panelTiepNhan.setVisible(false);
-        panelThuoc.setVisible(false);
+        panelThuoc1.setVisible(false);
     }//GEN-LAST:event_jButtonKhamBenhActionPerformed
 
     private void btThemNVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btThemNVActionPerformed
@@ -1664,7 +1664,7 @@ public class BaseFrame extends javax.swing.JFrame {
     private javax.swing.JPanel panelBenhNhan;
     private javax.swing.JPanel panelKhamBenh;
     private javax.swing.JPanel panelNhanVien;
-    private javax.swing.JPanel panelThuoc;
+    private javax.swing.JPanel panelThuoc1;
     private javax.swing.JPanel panelTiepNhan;
     private javax.swing.JTable tbThuoc;
     private javax.swing.JTable tblBN;
