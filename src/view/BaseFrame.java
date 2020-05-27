@@ -505,7 +505,6 @@ public class BaseFrame extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         panelBenhNhan = new javax.swing.JPanel();
         jLabel9 = new javax.swing.JLabel();
-        panelThuoc = new javax.swing.JPanel();
         panelKhamBenh = new javax.swing.JPanel();
         btToaThuoc = new javax.swing.JButton();
         jScrollPane3 = new javax.swing.JScrollPane();
@@ -557,6 +556,16 @@ public class BaseFrame extends javax.swing.JFrame {
         jFemale = new javax.swing.JRadioButton();
         btThemBN = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
+        panelThuoc = new javax.swing.JPanel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        txtTimMaThuoc = new javax.swing.JTextField();
+        jScrollPane4 = new javax.swing.JScrollPane();
+        tbThuoc = new javax.swing.JTable();
+        jLabel33 = new javax.swing.JLabel();
+        btThemThuoc = new javax.swing.JButton();
+        btTimMatoa = new javax.swing.JButton();
+        txtTimMatoa = new javax.swing.JTextField();
         btExit = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
@@ -613,7 +622,6 @@ public class BaseFrame extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(204, 204, 255));
         jPanel1.setForeground(new java.awt.Color(204, 204, 255));
 
-        jButtonBenhNhan.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\patients-icon.png")); // NOI18N
         jButtonBenhNhan.setText("BỆNH NHÂN");
         jButtonBenhNhan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -621,7 +629,6 @@ public class BaseFrame extends javax.swing.JFrame {
             }
         });
 
-        jButtonThuoc.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\drugs-icon.png")); // NOI18N
         jButtonThuoc.setText("THUỐC");
         jButtonThuoc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -629,7 +636,6 @@ public class BaseFrame extends javax.swing.JFrame {
             }
         });
 
-        jButtonTiepNhan.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\register-icon.png")); // NOI18N
         jButtonTiepNhan.setText("TIẾP NHẬN");
         jButtonTiepNhan.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -637,7 +643,6 @@ public class BaseFrame extends javax.swing.JFrame {
             }
         });
 
-        jButtonKhamBenh.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\doctor-icon.png")); // NOI18N
         jButtonKhamBenh.setText("KHÁM BỆNH");
         jButtonKhamBenh.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -645,7 +650,6 @@ public class BaseFrame extends javax.swing.JFrame {
             }
         });
 
-        jButtonNhanvien.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\employee-icon.png")); // NOI18N
         jButtonNhanvien.setText("NHÂN VIÊN");
         jButtonNhanvien.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -817,21 +821,7 @@ public class BaseFrame extends javax.swing.JFrame {
 
         jLayeredPane1.add(panelBenhNhan, "card3");
 
-        javax.swing.GroupLayout panelThuocLayout = new javax.swing.GroupLayout(panelThuoc);
-        panelThuoc.setLayout(panelThuocLayout);
-        panelThuocLayout.setHorizontalGroup(
-            panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 970, Short.MAX_VALUE)
-        );
-        panelThuocLayout.setVerticalGroup(
-            panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 332, Short.MAX_VALUE)
-        );
-
-        jLayeredPane1.add(panelThuoc, "card4");
-
         btToaThuoc.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        btToaThuoc.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\drugsList-icon.png")); // NOI18N
         btToaThuoc.setText("TOA THUỐC");
         btToaThuoc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -908,7 +898,6 @@ public class BaseFrame extends javax.swing.JFrame {
         txtMaBNKhamBenh.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         btThemBenhAn.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        btThemBenhAn.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\save-icon.png")); // NOI18N
         btThemBenhAn.setText("THÊM BỆNH ÁN");
         btThemBenhAn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -932,7 +921,6 @@ public class BaseFrame extends javax.swing.JFrame {
         txtThanhTien.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         btNextPatients.setFont(new java.awt.Font("Tahoma", 0, 16)); // NOI18N
-        btNextPatients.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\nextPatient-icon.png")); // NOI18N
         btNextPatients.setText("BỆNH NHÂN KẾ TIẾP");
 
         javax.swing.GroupLayout panelKhamBenhLayout = new javax.swing.GroupLayout(panelKhamBenh);
@@ -1235,6 +1223,103 @@ public class BaseFrame extends javax.swing.JFrame {
 
         jLayeredPane1.add(panelTiepNhan, "card6");
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 20)); // NOI18N
+        jLabel6.setText("DANH SÁCH THUỐC");
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel32.setText("Mã thuốc");
+
+        txtTimMaThuoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTimMaThuocActionPerformed(evt);
+            }
+        });
+
+        tbThuoc.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "Mã thuốc", "Tên thuốc", "Đơn vị", "Đơn giá", "Ngày SX", "Hạn SD", "Nơi SX"
+            }
+        ));
+        tbThuoc.setMaximumSize(new java.awt.Dimension(2147483647, 0));
+        tbThuoc.setMinimumSize(new java.awt.Dimension(155, 0));
+        tbThuoc.setPreferredSize(new java.awt.Dimension(570, 0));
+        jScrollPane4.setViewportView(tbThuoc);
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel33.setText("Mã toa thuốc");
+
+        btThemThuoc.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btThemThuoc.setText("Thêm thuốc");
+        btThemThuoc.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btThemThuocActionPerformed(evt);
+            }
+        });
+
+        btTimMatoa.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btTimMatoa.setText("Tìm");
+
+        txtTimMatoa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTimMatoaActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout panelThuocLayout = new javax.swing.GroupLayout(panelThuoc);
+        panelThuoc.setLayout(panelThuocLayout);
+        panelThuocLayout.setHorizontalGroup(
+            panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelThuocLayout.createSequentialGroup()
+                .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelThuocLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jScrollPane4))
+                    .addGroup(panelThuocLayout.createSequentialGroup()
+                        .addGap(322, 322, 322)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(panelThuocLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(2, 2, 2)
+                        .addComponent(txtTimMaThuoc, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 399, Short.MAX_VALUE)
+                        .addComponent(jLabel33)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtTimMatoa, javax.swing.GroupLayout.PREFERRED_SIZE, 88, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btTimMatoa)
+                        .addGap(48, 48, 48)
+                        .addComponent(btThemThuoc, javax.swing.GroupLayout.PREFERRED_SIZE, 109, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
+        );
+        panelThuocLayout.setVerticalGroup(
+            panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(panelThuocLayout.createSequentialGroup()
+                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel32, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtTimMaThuoc, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(txtTimMatoa, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(panelThuocLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(btThemThuoc, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabel33, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btTimMatoa, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jLayeredPane1.add(panelThuoc, "card4");
+
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
         jPanel5Layout.setHorizontalGroup(
@@ -1247,12 +1332,6 @@ public class BaseFrame extends javax.swing.JFrame {
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLayeredPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 332, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
-
-        btExit.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\close.png")); // NOI18N
-
-        jButton1.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\mini.png")); // NOI18N
-
-        jButton2.setIcon(new javax.swing.ImageIcon("D:\\Java\\JavaPhongMT\\src\\images\\mini1.png")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1494,6 +1573,24 @@ public class BaseFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_cbbChuanDoanActionPerformed
 
+    private void txtTimMaThuocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTimMaThuocActionPerformed
+        DefaultTableModel table= (DefaultTableModel)tbThuoc.getModel();
+        String search= txtTimMaThuoc.getText().toUpperCase();
+        TableRowSorter<DefaultTableModel> tr=new TableRowSorter<DefaultTableModel>(table);
+        tbThuoc.setRowSorter(tr);
+        tr.setRowFilter(RowFilter.regexFilter(search));
+    }//GEN-LAST:event_txtTimMaThuocActionPerformed
+
+    private void btThemThuocActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btThemThuocActionPerformed
+        // TODO add your handling code here:
+        insertThuocJDialog insertThuoc= new insertThuocJDialog(this, rootPaneCheckingEnabled);
+        insertThuoc.setVisible(true);
+    }//GEN-LAST:event_btThemThuocActionPerformed
+
+    private void txtTimMatoaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTimMatoaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTimMatoaActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -1510,6 +1607,8 @@ public class BaseFrame extends javax.swing.JFrame {
     private javax.swing.JButton btThemBenhAn;
     private javax.swing.JButton btThemNV;
     private javax.swing.JButton btThemPK;
+    private javax.swing.JButton btThemThuoc;
+    private javax.swing.JButton btTimMatoa;
     private javax.swing.JButton btToaThuoc;
     private javax.swing.JComboBox<String> cbbBacSi;
     private javax.swing.JComboBox<String> cbbChuanDoan;
@@ -1546,6 +1645,9 @@ public class BaseFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1557,12 +1659,14 @@ public class BaseFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
+    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel panelBenhNhan;
     private javax.swing.JPanel panelKhamBenh;
     private javax.swing.JPanel panelNhanVien;
     private javax.swing.JPanel panelThuoc;
     private javax.swing.JPanel panelTiepNhan;
+    private javax.swing.JTable tbThuoc;
     private javax.swing.JTable tblBN;
     private javax.swing.JTable tblNhanVien;
     private javax.swing.JTextField txtDiaChi;
@@ -1579,6 +1683,8 @@ public class BaseFrame extends javax.swing.JFrame {
     private javax.swing.JTextField txtTienThuoc;
     private javax.swing.JTextField txtTim;
     private javax.swing.JTextField txtTimMaNV;
+    private javax.swing.JTextField txtTimMaThuoc;
+    private javax.swing.JTextField txtTimMatoa;
     private javax.swing.JTextField txtTrieuChung;
     private javax.swing.JMenuItem update;
     // End of variables declaration//GEN-END:variables
